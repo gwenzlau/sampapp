@@ -1,4 +1,10 @@
 SampleApp::Application.routes.draw do
+  get "users/git"
+
+  get "users/checkout"
+
+  get "users/master"
+
   get "users/new"
 
  root to: 'static_pages#home'
