@@ -1,11 +1,10 @@
 SampleApp::Application.routes.draw do
+  resources :users
   get "users/git"
 
   get "users/checkout"
 
   get "users/master"
-
-  get "users/new"
 
  root to: 'static_pages#home'
 match '/signup', to: 'users#new'
